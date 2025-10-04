@@ -1,34 +1,58 @@
-body{
-    text-align: center;
-}
-.btn{
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 2.5px;
-}
-.btn-container{
-    display: flex;
-    justify-content: center;
-}
-.yellow{
-    background-color: yellow;
-}
-.red{
-    background-color: red;
-}
-.green{
-    background-color: green;
-}
-.purple{
-    background-color: purple;
+body {
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;
 }
 
-.flash{
-    background-color: white;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px black;
 }
 
-.userflash{
-    background-color: aqua;
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #ffea00;
+  text-shadow: 1px 1px 4px black;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.line-one, .line-two {
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  height: 160px;
+  width: 160px;
+  border-radius: 20%;
+  border: 6px solid #333;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+}
+.yellow { background: linear-gradient(145deg, #fff44f, #d1c700); }
+.red    { background: linear-gradient(145deg, #ff4b4b, #b80000); }
+.green  { background: linear-gradient(145deg, #3cff78, #008f32); }
+.purple { background: linear-gradient(145deg, #c77dff, #6a00b5); }
+.flash {
+  background: white !important;
+  box-shadow: 0 0 30px white;
+  transform: scale(1.1);
+}
+.userflash {
+  background: aqua !important;
+  box-shadow: 0 0 30px aqua;
+  transform: scale(1.1);
 }
