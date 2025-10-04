@@ -1,23 +1,25 @@
 body {
   text-align: center;
-  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  background: radial-gradient(circle at top, #222 0%, #000 100%);
+  font-family: "Poppins", Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  color: #f4f4f4;
 }
-
 h1 {
   font-size: 3rem;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 5px black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffcc00;
+  text-shadow: 0 0 8px #ffcc00, 0 0 15px #ff6600;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 30px;
-  color: #ffea00;
-  text-shadow: 1px 1px 4px black;
+  color: #ddd;
+  text-shadow: 0 0 5px #000;
 }
 .btn-container {
   display: flex;
@@ -32,27 +34,35 @@ h2 {
 .btn {
   height: 160px;
   width: 160px;
-  border-radius: 20%;
-  border: 6px solid #333;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  border-radius: 50%;
+  border: 6px solid #111;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease;
 }
 .btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+  transform: scale(1.07);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
 }
-.yellow { background: linear-gradient(145deg, #fff44f, #d1c700); }
-.red    { background: linear-gradient(145deg, #ff4b4b, #b80000); }
-.green  { background: linear-gradient(145deg, #3cff78, #008f32); }
-.purple { background: linear-gradient(145deg, #c77dff, #6a00b5); }
+.yellow {
+  background: radial-gradient(circle at 30% 30%, #fff75e, #d4c500);
+}
+.red {
+  background: radial-gradient(circle at 30% 30%, #ff6666, #a00000);
+}
+.green {
+  background: radial-gradient(circle at 30% 30%, #66ff99, #007a33);
+}
+.purple {
+  background: radial-gradient(circle at 30% 30%, #d38bff, #5a0099);
+}
 .flash {
   background: white !important;
-  box-shadow: 0 0 30px white;
-  transform: scale(1.1);
+  box-shadow: 0 0 25px white;
+  transform: scale(1.15);
 }
 .userflash {
-  background: aqua !important;
-  box-shadow: 0 0 30px aqua;
-  transform: scale(1.1);
+  background: cyan !important;
+  box-shadow: 0 0 25px cyan;
+  transform: scale(1.15);
 }
